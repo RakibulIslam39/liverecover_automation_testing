@@ -1,0 +1,20 @@
+{
+  "name": "voyagesms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create_an_account": "npx playwright test create_an_account.spec.js --workers=1 --project=chromium --headed",
+    "duplicate_account_creation": "npx playwright test duplicate_account_creation.spec.js --workers=1 --project=chromium --headed",
+    "shopify_store_page": "npx playwright test Shopify_store_with_an_invalid_store_domain.spec.js --workers=1 --project=chromium --headed",
+    "signup_page": "npx playwright test signup_page.spec.js --workers=1 --project=chromium --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.20",
+    "jest": "^29.7.0"
+  }
+}
